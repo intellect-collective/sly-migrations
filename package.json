@@ -1,0 +1,32 @@
+{
+  "name": "sly-migrations",
+  "version": "0.0.1",
+  "description": "An extremely simple migration library",
+  "engines": {
+    "node": ">=5.2.0",
+    "npm": ">=3.5.0"
+  },
+  "main": "index.js",
+  "bin": {
+    "migrate": "./src/cli.js"
+  },
+  "scripts": {
+    "test": "mocha -R spec --recursive ./test",
+    "test-watch": "mocha -R spec --watch --recursive ./test",
+    "coverage": "istanbul cover node_modules/.bin/_mocha -- -- ./test"
+  },
+  "dependencies": {
+    "glob": "^7.1.1"
+  },
+  "devDependencies": {
+    "chai": "3.4.x",
+    "chai-as-promised": "5.2.x",
+    "coveralls": "^2.13.0",
+    "eslint": "^3.18.0",
+    "eslint-config-xo": "^0.18.1",
+    "eslint-plugin-unicorn": "^2.0.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "sinon": "^2.1.0"
+  }
+}
